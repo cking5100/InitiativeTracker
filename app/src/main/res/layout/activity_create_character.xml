@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".createCharacter">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/characterNameEditText"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="Character Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/armorClassEditText"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="141dp"
+            android:ems="10"
+            android:hint="AC"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/bonusEditText"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="142dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_toStartOf="@+id/initiativeEditText"
+            android:layout_toLeftOf="@+id/initiativeEditText"
+            android:layout_toEndOf="@+id/armorClassEditText"
+            android:layout_toRightOf="@+id/armorClassEditText"
+            android:ems="10"
+            android:hint="Init Bonus"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/initiativeEditText"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/armorClassEditText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:hint="Initiative"
+            android:inputType="number" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

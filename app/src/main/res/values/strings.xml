@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Initiative Tracker</string>
+    <string name="title_activity_create_character">createCharacter</string>
+    <string name="dialog_create_new_character">Create New Character</string>
+    <string name="dialog_edit_character">Edit Character</string>
+    <string name="dialog_cancel">cancel</string>
+    <string name="dialog_edit_done">done</string>
+    <string name="dialog_new_create">create</string>
+</resources>

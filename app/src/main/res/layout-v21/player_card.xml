@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playerCardLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray4">
+
+
+            <ImageView
+                android:id="@+id/nameImageView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                card_view:srcCompat="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="383dp"
+                android:layout_height="49dp"
+                android:layout_alignStart="@id/nameImageView"
+                android:layout_alignLeft="@id/nameImageView"
+                android:layout_alignTop="@id/nameImageView"
+                android:layout_alignEnd="@+id/nameImageView"
+                android:layout_alignRight="@id/nameImageView"
+                android:layout_alignBottom="@+id/nameImageView"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:text="Arian Glass" />
+
+            <ImageView
+                android:id="@+id/acImageView"
+                android:layout_width="97dp"
+                android:layout_height="107dp"
+                android:layout_below="@id/nameTextView"
+                android:paddingLeft="10dp"
+                card_view:srcCompat="@drawable/armorclass" />
+
+            <TextView
+                android:id="@+id/armorClassTextView"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_alignStart="@+id/acImageView"
+                android:layout_alignLeft="@+id/acImageView"
+                android:layout_alignTop="@+id/acImageView"
+                android:layout_alignEnd="@+id/acImageView"
+                android:layout_alignRight="@+id/acImageView"
+                android:layout_alignBottom="@+id/acImageView"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="47dp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="20" />
+
+            <ImageView
+                android:id="@+id/initiativeBonusImageView"
+                android:layout_width="108dp"
+                android:layout_height="116dp"
+                android:layout_below="@id/nameTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-4dp"
+                android:layout_marginEnd="132dp"
+                android:layout_marginRight="132dp"
+                card_view:srcCompat="@drawable/initiativebonus" />
+
+            <TextView
+                android:id="@+id/initiativeBonusTextView"
+                android:layout_width="75dp"
+                android:layout_height="59dp"
+                android:layout_below="@+id/nameTextView"
+                android:layout_alignStart="@+id/initiativeBonusImageView"
+                android:layout_alignLeft="@+id/initiativeBonusImageView"
+                android:layout_alignEnd="@+id/initiativeBonusImageView"
+                android:layout_alignRight="@+id/initiativeBonusImageView"
+                android:layout_alignBottom="@+id/initiativeBonusImageView"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="36dp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="4" />
+
+            <ImageView
+                android:id="@+id/initImageView3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                card_view:srcCompat="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/initiativeTextView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignStart="@+id/initImageView3"
+                android:layout_alignLeft="@+id/initImageView3"
+                android:layout_alignTop="@+id/initImageView3"
+                android:layout_alignEnd="@+id/initImageView3"
+                android:layout_alignRight="@+id/initImageView3"
+                android:layout_alignBottom="@+id/initImageView3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="18"
+                android:textAllCaps="true" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
